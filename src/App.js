@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from "./components/Navbar";
 import FormContainer from './components/FormContainer';
-import Index from './components/Index';
+import Home from './components/Home';
 
 
 class App extends Component {
@@ -13,7 +13,7 @@ class App extends Component {
         <Router>
           <div>
             <Navbar />
-            <Route name="home" exact path="/" component={Index} />
+            <Route name="home" exact path="/" component={Home} />
             <Route name="FormContainer" path="/Container" component={FormContainer} />
           </div>
         </Router>
