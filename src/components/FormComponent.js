@@ -58,7 +58,7 @@ function FormComponent(props) {
 
                 <br />
 
-                <label>
+                {/*<label>
                     <input
                         type="checkbox"
                         name="isDone"
@@ -77,7 +77,7 @@ function FormComponent(props) {
                     /> in Progress
                 </label>
                 <br />
-                {/* 
+                 
                 <label>
                     <input
                         type="checkbox"
@@ -94,13 +94,12 @@ function FormComponent(props) {
             <h2>Task information:</h2>
             <p>Task name: {props.data.taskName}</p>
             <p>Task Description : {props.data.taskDesc}</p>
-            <p>Status: {props.data.gender}</p>
             <p>Task Priority: {props.data.priority}</p>
-            {/* <p>Your dietary restrictions:</p> */}
+            {/* <p>Your dietary restrictions:</p> 
 
             <p>Done: {props.data.isDone ? "Yes" : "No"}</p>
             <p>In Progress: {props.data.inProgress ? "Yes" : "No"}</p>
-            {/* <p>Lactose Free: {props.data.isLactoseFree ? "Yes" : "No"}</p> */}
+             <p>Lactose Free: {props.data.isLactoseFree ? "Yes" : "No"}</p> */}
 
         </main>
     )

@@ -11,7 +11,6 @@ class FormContainer extends Component {
             priority: "",
             isDone: false,
             inProgress: false,
-
         }
         this.handleChange = this.handleChange.bind(this)
     }
@@ -26,6 +25,10 @@ class FormContainer extends Component {
             this.setState({
                 [name]: value
             })
+    }
+
+    handleSubmit(event) {
+
     }
 
     render() {
