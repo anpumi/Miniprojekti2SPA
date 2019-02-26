@@ -11,7 +11,7 @@ class FormContainer extends Component {
             priority: "",
             isDone: false,
             inProgress: false,
-            isLactoseFree: false
+
         }
         this.handleChange = this.handleChange.bind(this)
     }

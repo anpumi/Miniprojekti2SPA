@@ -91,7 +91,7 @@ function FormComponent(props) {
                 <button>Submit</button>
             </form>
             <hr />
-            <h2>Status information:</h2>
+            <h2>Task information:</h2>
             <p>Task name: {props.data.taskName}</p>
             <p>Task Description : {props.data.taskDesc}</p>
             <p>Status: {props.data.gender}</p>
