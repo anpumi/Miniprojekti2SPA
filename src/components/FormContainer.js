@@ -27,7 +27,11 @@ class FormContainer extends Component {
             })
     }
 
-    handleSubmit(event) {
+    handleSubmit = (event) => {
+        event.preventDefault();
+        this.props.newTask(this.state);
+        this.setState({id:"", taskName:"", taskDesc:""});
+        // see which params needed above
 
     }
 

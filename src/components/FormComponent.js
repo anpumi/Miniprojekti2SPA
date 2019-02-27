@@ -1,4 +1,5 @@
 import React from "react"
+import Button from 'react-bootstrap/Button';
 
 function FormComponent(props) {
     return (
@@ -89,6 +90,7 @@ function FormComponent(props) {
                 <br /> */}
 
                 <button>Submit</button>
+                <Button variant="primary">SubmitBS</Button>
             </form>
             <hr />
             <h2>Task information:</h2>
