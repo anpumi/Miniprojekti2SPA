@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import FormComponent from "./FormComponent"
+import { create } from './ServiceClient';
+
+//Our "Create New Task -form"
 
 class FormContainer extends Component {
     constructor() {
@@ -27,10 +30,17 @@ class FormContainer extends Component {
             })
     }
 
+
     handleSubmit = (event) => {
         event.preventDefault();
-        this.props.newTask(this.state);
-        this.setState({id:"", taskName:"", taskDesc:""});
+        //this.props.callback(this.state);
+        // tähän createCallback -metodin ....
+        create(this.state, () => {
+            this.props.history.push('/TaskList');
+            this.setState({ taskName: '' , taskDesc: '', status: '', priority: '' } );
+        });
+        // this.props.newTask(this.state);
+        // this.setState({id:"", taskName:"", taskDesc:""});
         // see which params needed above
 
     }
@@ -38,7 +48,7 @@ class FormContainer extends Component {
     render() {
         return (
             <FormComponent
-                handleChange={this.handleChange}
+                handleSubmit={this.handleSubmit}
                 data={this.state}
             />
         )

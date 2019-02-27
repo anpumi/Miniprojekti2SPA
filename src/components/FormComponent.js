@@ -1,5 +1,8 @@
 import React from "react"
 import Button from 'react-bootstrap/Button';
+import FormContainer from './FormContainer';
+
+//"Create New"
 
 function FormComponent(props) {
     return (
@@ -8,7 +11,7 @@ function FormComponent(props) {
                 <input
                     name="taskName"
                     value={props.data.taskName}
-                    onChange={props.handleChange}
+                    onChange={props.handleSubmit}
                     placeholder="Task Name"
                 />
                 <br />
@@ -16,7 +19,7 @@ function FormComponent(props) {
                 <textarea
                     name="taskDesc"
                     value={props.data.taskDesc}
-                    onChange={props.handleChange}
+                    onChange={props.handleSubmit}
                     placeholder="Task Description. 400 max."
                 />
                 <br />
@@ -49,7 +52,7 @@ function FormComponent(props) {
                 <select
                     value={props.data.priority}
                     name="priority"
-                    onChange={props.handleChange}
+                    onChange={props.handleSubmit}
                 >
                     <option value="">-- Please Choose priority --</option>
                     <option value="By the end of day">By the end of day</option>
@@ -88,11 +91,11 @@ function FormComponent(props) {
                     /> Lactose Free?
                 </label>
                 <br /> */}
+                <Button variant="primary" value="Create" onClick={props.handleSubmit} >Submit</Button>
 
-                <button>Submit</button>
-                <Button variant="primary">SubmitBS</Button>
             </form>
             <hr />
+            {/* Tätä ei tod.näk tartte, poistetaan kunhan homma etenee */}
             <h2>Task information:</h2>
             <p>Task name: {props.data.taskName}</p>
             <p>Task Description : {props.data.taskDesc}</p>

@@ -4,6 +4,8 @@ import './App.css';
 import Navbar from "./components/Navbar";
 import FormContainer from './components/FormContainer';
 import Home from './components/Home';
+import TaskBox from './components/TaskBox';
+
 
 
 class App extends Component {
@@ -14,6 +16,7 @@ class App extends Component {
           <div>
             <Navbar />
             <Route name="home" exact path="/" component={Home} />
+            <Route name="TaskBox" exact path="/TaskBox" component={TaskBox} />
             <Route name="FormContainer" path="/Container" component={FormContainer} />
           </div>
         </Router>

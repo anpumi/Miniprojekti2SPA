@@ -33,6 +33,7 @@ export function haekaikki(callback) {
 
 //creates new task
 //TODO: change /api/ -address
+//TODO: luo olio (JSON.stringify), joka sisältää kaiken datan mitä halutaan ympätä databaseen..
 // (callback: createCallback)
 export function create(createCallback) {
     return fetch('/api/quotes', {
@@ -51,7 +52,7 @@ export function create(createCallback) {
 //TODO: change /api/ -address
 // (callback: id)
 export function remove(id) {
-    return fetch('/api/quotes/' + id,
+    return fetch('/api/user' + id,
              { method: 'DELETE' })
         .then(function(response) {
             if (response.status !==200) {
