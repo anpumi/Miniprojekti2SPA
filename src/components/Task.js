@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 
 class Task extends Component {
+    state = {
+        redirect: false
+    }
     render() {
         return (
-            <div>
-                
-            </div>
+            <ul>
+                <li>
+
+                </li>
+            </ul>
         );
     }
 }

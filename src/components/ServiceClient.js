@@ -9,7 +9,7 @@ const palveluurl = '/api';
 
 //searches all 
 //TODO: change /api/ -address
-export function haekaikki(callback) {
+export function fetchall(callback) {
 
     //setting eventhandler
     xhr.onreadystatechange = () => {
