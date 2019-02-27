@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from "./components/Navbar";
 import FormContainer from './components/FormContainer';
-import Home from './components/Home';
+// import Home from './components/Home';
 import TaskBox from './components/TaskBox';
+import TaskList from './components/TaskList';
 
 
 
@@ -15,9 +16,9 @@ class App extends Component {
         <Router>
           <div>
             <Navbar />
-            <Route name="home" exact path="/" component={Home} />
+            <Route name="TaskList" exact path="/" component={TaskList} />
             <Route name="TaskBox" exact path="/TaskBox" component={TaskBox} />
-            <Route name="FormContainer" path="/Container" component={FormContainer} />
+            <Route name="Create New" path="/Container" component={FormContainer} />
           </div>
         </Router>
       </div>
