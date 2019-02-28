@@ -32,7 +32,7 @@ class Navbar extends Component {
                         <td className="Greeting"> <br />Have a nice {timeofDay}! <br /> It's about {date.getHours() % 24} o'clock <span class="glyphicon glyphicon-time"></span></td>
                     
                     </tr> 
-                    <img src={logo} alt="My logo" />
+                    {/* <img src={logo} alt="My logo" /> */}
                 </table >
             </div>
         );
