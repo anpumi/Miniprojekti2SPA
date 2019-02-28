@@ -6,6 +6,7 @@ import FormContainer from './components/FormContainer';
 // import Home from './components/Home';
 import TaskBox from './components/TaskBox';
 import TaskList from './components/TaskList';
+import Footer from "./components/Footer";
 
 
 
@@ -21,6 +22,7 @@ class App extends Component {
             <Route name="Create New" path="/Container" component={FormContainer} />
           </div>
         </Router>
+        <Footer />
       </div>
     );
   }

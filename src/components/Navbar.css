@@ -1,0 +1,26 @@
+.Navi {
+    height: 20%;
+    background: #259671;
+    color: whitesmoke;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navi {
+    color: whitesmoke;
+}
+
+.Greeting {
+    background: #259671;
+    color: whitesmoke;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
