@@ -27,7 +27,7 @@ class Task extends Component {
         return (
             <div className="todo-list">
                 <li>
-                    Tehtävä: {this.props.task.TaskName} <br />Kuvaus: {this.props.task.TaskDesc} <br />Done?
+                    <strong>Task:</strong> {this.props.task.TaskName} <br /> <strong>Description:</strong> {this.props.task.TaskDesc} <br />Done?
                     < input
                         type="checkbox"
                         checked=""
