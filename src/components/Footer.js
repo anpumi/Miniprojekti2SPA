@@ -5,7 +5,10 @@ class Footer extends Component {
     render() {
         return (
             <div>
-                <footer className="myFooter">ToDo app copyright: Annukka, Miklas, Heidi and Topias</footer>
+                <div className="wrapper">
+                    <div className="push"></div>
+                </div>
+                <footer className="footer">ToDo app copyright: Annukka, Miklas, Heidi and Topias</footer>
             </div>
         );
     }
