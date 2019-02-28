@@ -1,10 +1,12 @@
 import React from "react"
 import Button from 'react-bootstrap/Button';
+import './FormComponent.css';
 // import FormContainer from './FormContainer';
 //"Create New"
 function FormComponent(props) {
     return (
         <main className="mainForm">
+        
             <form>
                 <input
                     name="taskName"
@@ -18,8 +20,9 @@ function FormComponent(props) {
                     value={props.data.taskDesc}
                     onChange={props.handleChange}
                     placeholder="Task Description. 400 max."
-                />
+                    />
                 <br />
+                
                 {/* <label>
                      <input
                          type="radio"
