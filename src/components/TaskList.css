@@ -2,11 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    font: Helvetica;
 }
 
 .list-group {
   background-color: white;
+  font: Helvetica;
   margin: auto;
   width: 50%;
   display: flex;
