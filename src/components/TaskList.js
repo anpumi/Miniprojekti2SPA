@@ -49,6 +49,7 @@ class TaskList extends Component {
         <ul className="list-group">
           {taskInstances}
         </ul>
+        <img class="image" src="http://makeameme.org/media/templates/120/grumpy_cat.jpg" alt="" width="120" height="120"></img>
         {/* <TaskDetails /> */}
       </div>
     );
