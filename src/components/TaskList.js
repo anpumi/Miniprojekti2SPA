@@ -36,6 +36,7 @@ class TaskList extends Component {
     }).bind(this));
   }
 
+
   render() {
     var callback = this.deletoisanonta;
     var taskInstances = this.state.data.map(function (tasks) {

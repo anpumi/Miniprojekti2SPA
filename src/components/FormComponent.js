@@ -69,14 +69,7 @@ function FormComponent(props) {
                     /> in Progress
                  </label>
                 <br />
-                <label>
-                    <input
-                        type="checkbox"
-                        name="isLactoseFree"
-                        onChange={props.handleChange}
-                        checked={props.data.isLactoseFree}
-                    /> Lactose Free?
-                 </label>
+
                 <br />
                 <Button variant="primary" value="Create" onClick={props.handleSubmit} >Submit</Button>
             </form>
@@ -86,10 +79,7 @@ function FormComponent(props) {
             <p>Task name: {props.data.taskName}</p>
             <p>Task Description : {props.data.taskDesc}</p>
             <p>Task Priority: {props.data.priority}</p>
-            {/* <p>Your dietary restrictions:</p> 
-             <p>Done: {props.data.isDone ? "Yes" : "No"}</p>
-             <p>In Progress: {props.data.inProgress ? "Yes" : "No"}</p>
-              <p>Lactose Free: {props.data.isLactoseFree ? "Yes" : "No"}</p> */}
+
         </main>
     )
 }

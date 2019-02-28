@@ -4,8 +4,9 @@ import './App.css';
 import Navbar from "./components/Navbar";
 import FormContainer from './components/FormContainer';
 // import Home from './components/Home';
-import TaskBox from './components/TaskBox';
+import TaskDetails from './components/TaskDetails';
 import TaskList from './components/TaskList';
+
 
 
 
@@ -19,6 +20,8 @@ class App extends Component {
             <Route name="TaskList" exact path="/" component={TaskList} />
             {/* <Route name="TaskBox" exact path="/TaskBox" component={TaskBox} /> */}
             <Route name="Create New" path="/Container" component={FormContainer} />
+            <Route name="Details" exact path="/Details/:taskId" component={TaskDetails} />
+
           </div>
         </Router>
       </div>

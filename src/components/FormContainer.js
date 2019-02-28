@@ -48,23 +48,11 @@ class FormContainer extends Component {
             return false;
         } else {
             createtask(this.state);
-            this.props.history.push('/task');
+            this.props.history.push('/');
             this.setState({ taskName: '', taskDesc: '', status: '', priority: '', formErrors: { name: '', desc: '' } });
         }
     }
 
-    // handleSubmit = (event) => {
-    //     event.preventDefault();
-    //     //this.props.callback(this.state);
-    //     // tähän createCallback -metodin ....
-    //     create(this.state, () => {
-    //         this.props.history.push('/Task');
-    //         this.setState({ taskName: '', taskDesc: '', status: '', priority: '' });
-    //     });
-    //     // this.props.newTask(this.state);
-    //     // this.setState({id:"", taskName:"", taskDesc:""});
-    //     // see which params needed above
-    // }
 
 
     render() {
