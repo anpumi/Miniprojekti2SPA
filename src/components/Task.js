@@ -35,7 +35,8 @@ class Task extends Component {
                     />
                 </li>
                 <div className="dlink" onClick={this.deletequote}>
-                    Delete<span className="glyphicon glyphicon-trash"></span>
+                <a href="#"><span class="glyphicon glyphicon-trash"></span>
+                    </a>
                 </div>
                 <div className="taskName" onClick={this.detailsRedirect}>
                     <span><Link to={`/details/${this.props.task.TaskID}`}>Details</Link></span>

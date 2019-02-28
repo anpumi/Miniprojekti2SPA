@@ -66,7 +66,7 @@ function FormComponent(props) {
                         name="inProgress"
                         onChange={props.handleChange}
                         checked={props.data.inProgress}
-                    /> in Progress
+                    /> In Progress
                  </label>
                 <br />
 
