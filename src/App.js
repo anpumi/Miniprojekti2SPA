@@ -17,7 +17,7 @@ class App extends Component {
           <div>
             <Navbar />
             <Route name="TaskList" exact path="/" component={TaskList} />
-            <Route name="TaskBox" exact path="/TaskBox" component={TaskBox} />
+            {/* <Route name="TaskBox" exact path="/TaskBox" component={TaskBox} /> */}
             <Route name="Create New" path="/Container" component={FormContainer} />
           </div>
         </Router>

@@ -1,15 +1,31 @@
 
 // TÄMÄ TOIMII JA PALAUTTAA
 
-const apiUrl = "/api/user/1";
+const apiUrl = "/api/";
 
 //searches all 
 export function fetchall() {
-    return fetch(apiUrl).then(function (res) {
+    return fetch("/api/user/4").then(function (res) {
         return res.json();
     });
 }
 
+export function deletequote(id/*, callback*/) {
+    return fetch(apiUrl + 'task/' + id, { method: 'DELETE' })
+        .then(function (response) {
+            //callback();
+        })
+}
+
+export function createtask(task) {
+    fetch(apiUrl + 'task', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(task)
+    })
+        .then((function (response) {
+        }));
+}
 // EI KAI TOIMI VIELÄ
 
 export function create(createCallback) {
