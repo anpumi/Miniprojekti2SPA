@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
+import './Task.css';
 
 class Task extends Component {
     constructor(props) {
@@ -34,9 +34,10 @@ class Task extends Component {
                         onChange=""
                     />
                 </li>
+                
                 <div className="dlink" onClick={this.deletequote}>
                 <a href="#"><span class="glyphicon glyphicon-trash"></span>
-                    </a>
+                    </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 </div>
                 <div className="taskName" onClick={this.detailsRedirect}>
                     <span><Link to={`/details/${this.props.task.TaskID}`}>Details</Link></span>

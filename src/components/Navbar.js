@@ -26,10 +26,10 @@ class Navbar extends Component {
             <div>
                 <table className="Navi">
                     <tr>
-                        <td><Link to="/" className="navi">Home &nbsp; </Link></td>
+                        <td className="Greeting"> <br />Have a nice {timeofDay}! <br /> It's about {date.getHours() % 24} o'clock </td><p className="glyphicon glyphicon-time"></p>
+                        <td width='50%'><Link to="/" className="navi">Home</Link></td> 
                         {/* <td><Link to="/TaskList" className="navi">Task List &nbsp; </Link></td> */}
-                        <td><Link to="/Container" className="navi">Add Task &nbsp; </Link></td> 
-                        <td className="Greeting"> <br />Have a nice {timeofDay}! <br /> It's about {date.getHours() % 24} o'clock <span class="glyphicon glyphicon-time"></span></td>
+                        <td width='50%'> &nbsp;<Link to="/Container" className="navi">Add Task</Link></td> 
                     
                     </tr> 
                     {/* <img src={logo} alt="My logo" /> */}

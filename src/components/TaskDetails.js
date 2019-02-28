@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { fetchone, updateTask } from './ServiceClient'
+import './TaskDetails.css';
 class TaskDetails extends Component {
 
     constructor(props) {
@@ -86,7 +87,7 @@ class TaskDetails extends Component {
 
             // </div>
             //                 AKAFJDÖFKLJASDÖFJASDÖKFHASDHASDÖKGHASÖKGHASDÖKGHASDÖKGHASDÖKHGASDÖKGH
-            <form>
+            <form className='taskDetails-formi'>
                 <input
                     name="taskName"
                     value={this.state.task.TaskName}
@@ -98,38 +99,6 @@ class TaskDetails extends Component {
                     onChange={this.handleDescChange}
                     placeholder="Task Description. 400 max."></textarea>
 
-                {/*                 
-                <br />
-                <select
-                    value={props.data.priority}
-                    name="priority"
-                    onChange={props.handleChange}
-                >
-                    <option value="">-- Please Choose priority --</option>
-                    <option value="By the end of day">By the end of day</option>
-                    <option value="End of the Week">End of the Week</option>
-                    <option value="At some point">At some point</option>
-                </select>
-                <br />
-                <label>
-                    <input
-                        type="checkbox"
-                        name="isDone"
-                        onChange={props.handleChange}
-                        checked={props.data.isDone}
-                    /> Done
-                 </label>
-                <br />
-                <label>
-                    <input
-                        type="checkbox"
-                        name="inProgress"
-                        onChange={props.handleChange}
-                        checked={props.data.inProgress}
-                    /> in Progress
-                 </label>
-                <br />
-                 */}
                 <button variant="primary" value="Edit" class="btn btn-default btn-sm" class="glyphicon glyphicon-pencil" onClick={this.handleSubmit} >Edit</button>
             </form>
 
