@@ -26,6 +26,16 @@ export function createtask(task) {
         .then((function (response) {
         }));
 }
+// Annukka räveltää
+export function updatetask(task) {
+    fetch(apiUrl + 'task' + id, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(task)
+    })
+        .then((function (response) {
+        }));
+}
 // EI KAI TOIMI VIELÄ
 
 export function create(createCallback) {
