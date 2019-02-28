@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import logo from '../logo.svg';
 
 //inserts greeting to Navbar 
 //set time and appropriate greeting
@@ -28,8 +29,9 @@ class Navbar extends Component {
                         <td><Link to="/" className="navi">Home &nbsp; </Link></td>
                         <td><Link to="/TaskList" className="navi">Task List &nbsp; </Link></td>
                         <td><Link to="/Container" className="navi">Add Task &nbsp; </Link></td> 
-                        <td className="Greeting"> <br />Have a nice {timeofDay}! <br /> It's about {date.getHours() % 12} o'clock <span class="glyphicon glyphicon-time"></span></td>
+                        <td className="Greeting"> <br />Have a nice {timeofDay}! <br /> It's about {date.getHours() % 24} o'clock <span class="glyphicon glyphicon-time"></span></td>
                     </tr>
+                    <img src={logo} alt="My logo" />
                 </table >
             </div>
         );
