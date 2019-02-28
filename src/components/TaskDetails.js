@@ -130,7 +130,7 @@ class TaskDetails extends Component {
                  </label>
                 <br />
                  */}
-                <button variant="primary" value="Edit" onClick={this.handleSubmit} >Edit</button>
+                <button variant="primary" value="Edit" class="btn btn-default btn-sm" class="glyphicon glyphicon-pencil" onClick={this.handleSubmit} >Edit</button>
             </form>
 
 
