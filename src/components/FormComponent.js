@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 //"Create New"
 function FormComponent(props) {
     return (
-        <main>
+        <main className="mainForm">
             <form>
                 <input
                     name="taskName"

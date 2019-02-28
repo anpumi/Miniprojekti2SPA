@@ -27,18 +27,20 @@ class Task extends Component {
         return (
             <div className="todo-list">
                 <li>
+                    Tehtävä: {this.props.task.TaskName} <br />Kuvaus: {this.props.task.TaskDesc} <br />Done?
                     < input
                         type="checkbox"
                         checked=""
                         onChange=""
                     />
-                    Tehtävän nimi: {this.props.task.TaskName} <br />Tehtävä: {this.props.task.TaskDesc}
                 </li>
                 <div className="dlink" onClick={this.deletequote}>
                     Delete<span className="glyphicon glyphicon-trash"></span>
                 </div>
-                <li className="taskName" onClick={this.detailsRedirect}>Task ID:{this.props.task.TaskID} </li>
-                <li><Link to={`/details/${this.props.task.TaskID}`} >Details</Link></li>
+                <div className="taskName" onClick={this.detailsRedirect}>
+                    <span><Link to={`/details/${this.props.task.TaskID}`}>Details</Link></span>
+                </div>
+
 
             </div >
         );

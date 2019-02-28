@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import TaskDetails from './TaskDetails';
 import Task from './Task'
 import { fetchall, deletequote } from './ServiceClient';
-
+import './TaskList.css';
 
 class TaskList extends Component {
   constructor(props) {
@@ -45,7 +45,7 @@ class TaskList extends Component {
 
     return (
       <div className="taskList">
-        <h1>To Do:</h1>
+        <h1 className="todoHeader">To Do:</h1>
         <ul className="list-group">
           {taskInstances}
         </ul>

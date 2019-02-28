@@ -33,6 +33,7 @@ export function createtask(task) {
         }));
 }
 
+
 export function updateTask(task, callback) {
     console.log("Update task");
     console.dir(task);
